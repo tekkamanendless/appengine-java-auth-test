@@ -6,8 +6,8 @@
 <%
 UserService userService = UserServiceFactory.getUserService();
 User user = userService.getCurrentUser();
-String loginUrl = userService.createLoginURL(request.getRequestURI());
-String logoutUrl = userService.createLogoutURL(request.getRequestURI());
+String loginUrl = userService.createLoginURL("/");
+String logoutUrl = userService.createLogoutURL("/");
 %>
 <html>
 	<head>
